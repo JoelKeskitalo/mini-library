@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Mini Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>A mini library, comprising 8 children books.</h1>
+        <input type="text" id="searchInput" placeholder="Search book...">
+    </header>
+
+    <main>
+        <div id="bookList" class="book-list"></div>
+    </main>
+
+    <footer>
+        <p>© 2024 Joel's Mini Library</p></p>
+    </footer>
+
+    <!--modal, eller pop-up fönstret som ska visas när vi klickar på böckerna-->
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalAuthor"></p>
+            <p id="modalPublisher"></p>
+            <p id="modalYear"></p>
+            <p id="modalPages"></p>
+            <p id="modalPlot"></p>
+            <p id="modalAudience"></p>
+            <p id="modalColor"></p>
+        </div>
+    </div>
+
+
+
+    <script src="dist\index.js"></script>
+</body>
+</html>
